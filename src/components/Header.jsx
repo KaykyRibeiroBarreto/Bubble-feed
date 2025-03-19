@@ -1,10 +1,11 @@
 import styles from './Header.module.css';
-console.log(styles); 
+import bubbleLogo from '../assets/bubble-logo.png';
 
 export function Header() {
   return (
     <header className={styles.header}>
-      <h1 >Bubble Feed</h1>
+      <img src={bubbleLogo} alt="Bubble Feed" />
+      <h1>Bubble Feed</h1>
     </header>
   );
 }
